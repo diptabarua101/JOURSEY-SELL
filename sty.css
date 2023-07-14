@@ -1,0 +1,109 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid-container > div{
+    border: 2px solid black;
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+.item4{
+    grid-column: 4/4;
+    grid-row: 1/span 2;
+    color: white;
+}
+
+/* Top Products */
+
+.product{
+    cursor: pointer;
+    width: 100%;
+}
+.product img{
+    transition: 0.3s all;
+}
+.product:hover img{
+    border-radius: 20px;
+}
+
+.product .buy-button{
+    background-color: white;
+}
+
+.product .buy-button:hover{
+    background-color: black;
+    color: red;
+}
+
+.item{
+   padding-bottom: 30px;
+}
+
+/*footer*/
+ .footer {
+    background: black;
+    color: antiquewhite;
+    height: 300px;
+    position: relative;
+ }
+
+ .footer .footer-content{
+    border: 1px solid red;
+    height: 300px;
+    display: flex;
+ }
+ .footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+    border: 1px solid white;
+ }
+ .footer .footer-content .about .contact span{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+ }
+ .footer .footer-content .about .socials a{
+    border: 1px solid gray;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+ }
+
+ .footer .footer-content .contact-form .contact-input{
+    background: white;
+    color: black;
+    margin-bottom: 5px;
+    padding: .9rem 1.4rem;
+ }
+ .footer .footer-content .links ul a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    color : white;
+ }
+ .footer .footer-bottom {
+    background: black;
+    color: whitesmoke;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+ }
+ .normalb{
+   background-color: black;
+   color: white;
+   padding: 13px 30px;
+   cursor: pointer;
+   border-radius: 70px;
+}

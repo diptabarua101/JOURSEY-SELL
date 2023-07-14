@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rusticwish Goods</title>
+  <link rel="stylesheet" href="sty.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- OWL  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .menu {
+      display: flex;
+      justify-content: flex-end;
+      background-color: black;
+    }
+
+    .menu a {
+      text-decoration: none;
+      padding: 20px;
+      color: white;
+    }
+
+    .menu a:hover {
+      background-color: grey;
+    }
+
+    #feedback{
+      background: royalblue;
+      padding: 5% 5%;
+    }
+
+    #upcoming{
+      background: gray;
+      padding: 3% 5%;
+    }
+
+    .carousel-item {
+      padding: 5% 15%;
+      text-align: center;
+      font-style: italic;
+    }
+
+    .feedback-img {
+      width: 120px;
+    }
+
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body{
+      background-color: gray;
+      font-family: arial;
+    }
+
+    .main {
+      margin: 2%;
+    }
+
+    .card {
+      width: 26%;
+      display: inline-block;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 5px;
+      margin: 3%;
+    }
+
+    .image img {
+      width: 100%;
+    }
+
+    .title {
+      text-align: center;
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    .des{
+      padding: 3px;
+      text-align: center;
+      padding-top: 10px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    button {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      background-color: white;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    button:hover {
+      text-align:justify;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+
+    .box {
+      display: grid;
+      grid-template-columns: 11fr 2fr;
+      width: 80%;
+      margin: auto;
+      text-align: left;
+    }
+
+    .my-card {
+      border: 2px solid black;
+    }
+
+    .navbar {
+      width: 100%;
+      margin: auto;
+    }
+
+    .nav-back {
+      background-color: black;
+    }
+  </style>
+</head>
+<!-- Navigation bar-->
+<body>
+  <div class="nav-back">
+    <div class="navbar">
+      <div class="name">
+        <img src="Foot.png" alt width="100px" height="80px">
+        <br>
+        <h1 style="padding-left: 15px;color:white;">Rusticwish Goods</h1>
+      </div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Review</a>
+        <a href="#">Socials</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+
+<!---->
+
+
+  <div class="container text-white">
+    <section id="feedback">
+      <div class="section-title">
+        <h3 class="text-center">Our Products</h3>
+        <hr class="hr-style">
+      </div>
+      <div class="row">
+        <div class="colo-lg-12">
+          <div class="container text-center mt-5">
+            <hr class="mx-auto">
+            <p><b>These are the items our customers like the most</b></p>
+          </div>
+          <div style="background-color: black;padding-bottom: 25px;padding-top: 10px;" class="container-fluid p-info">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div style="display: flex;justify-content: center;">
+                    <div style="margin-right: 150px; margin-top: 150px;">
+                      <h5 style="color: white;font-weight:500;font-style: italic;">Adidas Al-Rihla Official Match-Ball
+                        <br>Replica-Qatar-World-Cup-2022
+                      </h5>
+                    </div>
+                    <div>
+                      <img style="width: 500px;height: 400px;" src="football qatar.png" class="d-block w-100" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div style="display: flex;justify-content: center;">
+                    <div style="margin-right: 150px; margin-top: 150px;">
+                      <h5 style="color: white;font-weight:500;font-style: italic;">Argentina Home kit world cup 2022<br>
+                      </h5>
+                    </div>
+                    <div>
+                      <img style="width: 500px;height: 400px;" src="Argentina-Home-Jersey.png" class="d-block w-100"
+                        alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div style="display: flex;justify-content: center;">
+                    <div style="margin-right: 150px; margin-top: 150px;">
+                      <h5 style="color: white;font-weight:500;font-style: italic;">Pakistan 2022 T20 World cup
+                        jersey<br>
+                      </h5>
+                    </div>
+                    <div>
+                      <img style="width: 500px;height: 400px;" src="pak-jersey.jpg" class="d-block w-100" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  
+  <-- Carousel end -->
+
+  <section id="top-products">
+    <div class="container text-center mt-5 py-5" style="color:black">
+      <h3 style="font-weight: bold;">TOP PRODUCTS</h3>
+      <hr class="mx-auto">
+      <p>These are our top quality products with best prices.</p>
+    </div>
+
+    <div class="grid-container mx-auto container-fluid">
+      <div class="product">
+        <img class="img-fluid mb-3" style="width: 300px; height: 300px;" src="argnetina away.jpg" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h5 class="p-name">Argentina away Kit</h5>
+        <h4 class="p-price">$24.99</h4>
+        <button class="buy-button" onclick="myFunction(24.99)">Buy Now</button>
+
+      </div>
+      <div class="product">
+        <img class="img-fluid mb-3" style="width: 300px; height: 300px;" src="Argentina-Home-Jersey.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h5 class="p-name">Argentina Home Kit</h5>
+        <h4 class="p-price">$24.99</h4>
+        <button class="buy-button" onclick="myFunction(24.99)">Buy Now</button>
+      </div>
+      <div class="product">
+        <img class="img-fluid mb-3" style="width: 300px; height: 300px;" src="football qatar.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h5 class="p-name">Qatar 2022 WC ball</h5>
+        <h4 class="p-price">$24.99</h4>
+        <button class="buy-button" onclick="myFunction(24.99)">Buy Now</button>
+      </div>
+
+      <div class="item4">
+        <div class="container-fluid p-0 m-0">
+          <div class="cash w-100" id="total_price">
+            <table class="table table-bordered table-responsive display-4">
+              <thead>
+                <tr>
+                  <th style="color: white;"colspan="2">My Cart</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span><i class="fa-sharp fa-solid fa-cart-shopping"></i></span>
+                    <span>
+                      <h4 style="color: white;">Total Products</h4>
+                    </span></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><i class="fa-solid fa-coins"></i><span>
+                      <h4 style="color: white;">Price</h4>
+                    </span></td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><i class="fa-solid fa-truck"></i>
+                    <h4 style="color: white;">Delivery</h4>
+                  </td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><i class="fa-solid fa-truck-arrow-right"></i>
+                    <h4 style="color: white;">Shipping</h4>
+                  </td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><i class="fa-solid fa-coins"></i></i>
+                    <h4 style="color: white;">Total Price</h4>
+                  </td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><i class="fa-solid fa-coins"></i>
+                    <h4 style="color: white;">Tax</h4>
+                  </td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><i class="fa-solid fa-coins"></i>
+                    <h4 style="color: white;">Total Price with Tax</h4>
+                  </td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <button style="color: white;"class="btn px-4 py-2 btn-danger" onclick="checkOut()">Check OUT</button>
+        </div>
+
+      </div>
+      <div class="product">
+        <img class="img-fluid mb-3" style="width: 300px; height: 300px;" src="india.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h5 class="p-name">India T20 Wc Kit</h5>
+        <h4 class="p-price">$24.99</h4>
+        <button class="buy-button" onclick="myFunction(24.99)">Buy Now</button>
+      </div>
+      <div class="product">
+        <img class="img-fluid mb-3" style="width: 300px; height: 300px;" src="mrf bat.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h5 class="p-name">MRF BAT</h5>
+        <h4 class="p-price">$24.99</h4>
+        <button class="buy-button" onclick="myFunction(24.99)">Buy Now</button>
+      </div>
+      <div class="product">
+        <img class="img-fluid mb-3" style="width: 300px; height: 300px;" src="Spain kit.png" alt="">
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h5 class="p-name">Spain concept Kit</h5>
+        <h4 class="p-price">$24.99</h4>
+        <button class="buy-button" onclick="myFunction(24.99)">Buy Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="upcoming" class="w-100" style="color:black">
+    <div class="container text-center mt-5 py-5">
+      <h3 style="font-weight: bold;">UPCOMING PRODUCTS</h3>
+      <hr class="mx-auto">
+      <p>Uupcoming world cup kits.</p>
+    </div>
+    <div class="row p-0 m-0">
+      <div style="border-right: 3px solid gray;" class="one col-lg-4 col-md-12 col-12 p-0">
+        <img style="width: 600px;height: 400px;" class="img-fluid" src="kookaburra bat.jpg" alt="">
+        <div class="details">
+          <h2 style="text-align:center;">kookaburra bat</h2>
+          <button class="text-uppercase normalb">Preorder now</button>
+        </div>
+      </div>
+      <div style="border-right: 3px solid grey;" class="one col-lg-4 col-md-12 col-12 p-0">
+        <img style="width: 600px;height: 400px;" class="img-fluid" src="india.png" alt="">
+        <div class="details">
+          <h2 style="text-align:center;">India T20 wc Jersey</h2>
+          <button class="text-uppercase normalb">Preorder now</button>
+        </div>
+      </div>
+      <div class="one col-lg-4 col-md-12 col-12 p-0">
+        <img style="width: 600px;height: 400px;" class="img-fluid" src="germany.png" alt="">
+        <div class="details">
+          <h2 style="text-align:center;">Germany Home Kit</h2>
+          <button class="text-uppercase normalb">Preorder now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container text-center mt-5 py-5">
+    <h3 style="font-weight: bold;color: black;">CUSTOMER REVIEWS</h3>
+    <hr class="mx-auto">
+    <h5><b>Here are some reviews of our customers</b></h5>
+  </div>
+
+  <section style="background-color: indianred;padding-bottom: 50px;">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div style="margin-left: 100px;padding-top: 30px;">
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-bottom: 40px;">
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum facere nisi minus quibusdam quis laboriosam consequatur, optio nam possimus corporis omnis quos ad aliquid dolor adipisci illum! Soluta, vel neque.</h5>
+          </div>
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="messi.png">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 100px;padding-top: 30px;">
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-bottom: 40px;">
+            <h5>Really nice quality products.</h5>
+          </div>
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="cr7.png">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 100px;padding-top: 30px;">
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-bottom: 40px;">
+            <h5>Really nice quality products.</h5>
+          </div>
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="neymar.png">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 100px;padding-top: 30px;">
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-bottom: 40px;">
+            <h5>Really nice quality products.</h5>
+          </div>
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="putin.png">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 100px;padding-top: 30px;">
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-bottom: 40px;">
+            <h5>Really nice quality products.</h5>
+          </div>
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="shakib.png">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 100px;padding-top: 30px;">
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-bottom: 40px;">
+            <h5>Really nice quality products.</h5>
+          </div>
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="tamim.png">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 100px;padding-top: 30px;">
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-bottom: 40px;">
+            <h5>Really nice quality products.</h5>
+          </div>
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="pm.png">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 100px;padding-top: 30px;">
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-bottom: 40px;">
+            <h5>Really nice quality products.</h5>
+          </div>
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="khaleda zia.png">
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div style="margin-left: 100px;padding-top: 20px;">
+          <div style="color: black;font-weight: 500;margin-left: 40px;margin-bottom: 40px;">
+            <h5>Great quality products.</h5>
+          </div>
+          <div>
+            <img style="width: 300px;height: 270px;border: 7px solid black;" src="trump.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2 style="color:crimson">Rusticwish Goods</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Aspernatur deserunt iste ducimus atque architecto quaerat nostrum,
+        </p>
+        <div class="contact">
+          <span><i class="fas fa-envelope"></i> &nbsp; info@Rusticwishgoods.com</span>
+        </div>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section contact-form">
+        <h2 style="color:crimson">Customer Satisfaction</h2>
+        <p><strong>Are you satisfied with the product?</strong></p>
+
+        <form action="">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1">Graet product</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2">Products are okay!</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3">Very bad</label><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <strong style="color:crimson">&copy; Rusticwishgoods.com | Designed by Shanto</strong>
+    </div>
+
+  </div>
+
+  <!--  OWL  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+  <script src="ecs.js"></script>
+</body>
+
+</html>
